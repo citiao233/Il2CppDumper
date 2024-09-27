@@ -24,7 +24,7 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Publish
-      run: dotnet publish --configuration Release
+      run: dotnet publish --configuration Release -f net8.0
 
     - name: Upload Artifacts
       uses: actions/upload-artifact@v3
