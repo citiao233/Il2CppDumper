@@ -24,7 +24,7 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Publish
-      run: dotnet publish --configuration Release --output ./output
+      run: dotnet publish --configuration Release
 
     - name: Upload Artifacts
       uses: actions/upload-artifact@v3
